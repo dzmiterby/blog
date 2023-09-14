@@ -1,0 +1,10 @@
+@import '../App/App.module.scss';
+
+.articleList__container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+ul:last-child > li:last-child {
+    display: none;
+}

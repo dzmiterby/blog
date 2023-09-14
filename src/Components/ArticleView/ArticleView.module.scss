@@ -1,0 +1,124 @@
+@import '../App/App.module.scss';
+
+.articleView__container {
+    max-width: 940px;
+    background-color: $colorWhite;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    padding: 0 10px 0 0;
+}
+
+.article__container {
+    display: flex;
+    padding: 10px 0 10px 10px;
+}
+
+@media (max-width: 767px) {
+    .article__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.article__info {
+    width: 70%;
+}
+
+@media (max-width: 767px) {
+    .article__info {
+        width: 100%;
+    }
+}
+
+.article__info div {
+    display: flex;
+    align-items: center;
+}
+
+.article__info div img {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.article__info div span {
+    margin-left: 5px;
+}
+
+.article__title {
+    font-size: calc($fontsize * (20 / 12));
+    color: #1890FF;
+}
+
+.article__info-user {
+    width: 30%;
+}
+
+@media (max-width: 767px) {
+    .article__info-user {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.article__info-user1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.article__info-user2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.article__info-del {
+    height: 30px;
+    font-size: calc($fontsize * (14 / 12));
+    color: #F5222D;
+    background-color: $colorWhite;
+    border: 1px solid #F5222D;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.article__info-edit {
+    height: 30px;
+    font-size: calc($fontsize * (14 / 12));
+    color: #52C41A;
+    background-color: $colorWhite;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 0 20px;
+}
+
+.info-user__box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info-user__name {
+    font-size: calc($fontsize * (18 / 12));
+    color: rgba(0, 0, 0, 0.85);;
+}
+
+.info-user__date {
+    color: rgba(0, 0, 0, 0.50);;
+}
+
+.info-user__box2 {
+    max-width: 45px;
+    margin-left: 10px;
+}
+
+.info-user__box2 img {
+    width: 100%;
+}
+
+.articleView__text {
+    font-size: calc($fontsize * (18 / 12));
+    overflow: auto;
+    margin-top: 10px;
+    padding: 0 10px 20px;
+}
